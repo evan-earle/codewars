@@ -4,6 +4,8 @@
 
 // All inputs will be valid.
 
+// Answer
+
 function last(x) {
   let xArr = x.split(" ");
   let sortedArr = xArr.sort((a, b) => {

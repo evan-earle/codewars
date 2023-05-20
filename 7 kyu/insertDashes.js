@@ -3,6 +3,8 @@
 
 // Note that the number will always be non-negative (>= 0).
 
+// Answer
+
 function insertDash(num) {
   let numArray = num.toString().split("");
 

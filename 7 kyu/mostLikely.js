@@ -6,6 +6,8 @@
 
 // Input: ('1:3','1:2') - returns false as 1 in 3 is less likely than 1 in 2.
 
+// Answer
+
 function mostLikely(prob1, prob2) {
   return eval(prob1.replace(":", "/")) > eval(prob2.replace(":", "/"))
     ? true

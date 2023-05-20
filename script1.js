@@ -1,3 +1,5 @@
+// Answer
+
 function likeOrDislike(buttons) {
   let state = "Nothing";
 

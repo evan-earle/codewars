@@ -10,6 +10,8 @@
 // [1, 5, 87, 45, 8, 8] --> [45, 87]
 // [1, 3, 10, 0]) --> [3, 10]
 
+// Answer
+
 function twoOldestAges(ages) {
   let oldestAges = [];
   let sortedAges = ages.sort((a, b) => a - b);

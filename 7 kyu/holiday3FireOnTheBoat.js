@@ -17,6 +17,8 @@
 //   return newString;
 // }
 
+// Answer
+
 function fireFight(s) {
   console.log(s.replaceAll("Fire", "~~"));
 }
