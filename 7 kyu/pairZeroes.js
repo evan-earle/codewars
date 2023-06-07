@@ -37,6 +37,7 @@ function pairZeros(arr) {
     if (arr[i] === 0 && pair === true) {
       arr.splice(i, 1);
       pair = false;
+      console.log(i);
       i = i - 1;
     } else if (arr[i] === 0 && pair === false) {
       pair = true;
@@ -46,6 +47,6 @@ function pairZeros(arr) {
 }
 
 pairZeros([1, 0, 1, 0, 2, 0, 0, 3, 0]);
-pairZeros([0, 0, 0]);
-pairZeros([0, 0]);
+// pairZeros([0, 0, 0]);
+// pairZeros([0, 0]);
 //[1,0,1,2,0,3,0]
