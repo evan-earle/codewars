@@ -22,6 +22,4 @@
 
 // Answer
 
-function peopleWithAgeDrink(old) {
-  return "";
-}
+function peopleWithAgeDrink(old) {}
