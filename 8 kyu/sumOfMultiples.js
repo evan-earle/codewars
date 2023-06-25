@@ -14,4 +14,15 @@
 
 // Answer
 
-function sumMul(n, m) {}
+function sumMul(n, m) {
+  if (n >= m) return "INVALID";
+  sum = 0;
+  for (let i = n; i < m; i += n) {
+    sum += i;
+  }
+  return sum;
+}
+
+sumMul(2, 9);
+sumMul(3, 13);
+sumMul(4, -7);
