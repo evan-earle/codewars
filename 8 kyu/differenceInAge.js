@@ -8,4 +8,15 @@
 
 // Answer
 
-function differenceInAges(ages) {}
+function differenceInAges(ages) {
+  let newArr = [];
+  let sorted = ages.sort((a, b) => a - b);
+  newArr.push(
+    sorted[0],
+    sorted[sorted.length - 1],
+    sorted[sorted.length - 1] - sorted[0]
+  );
+  return newArr;
+}
+
+differenceInAges([32, 67, 45, 16, 2, 56]);
