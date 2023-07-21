@@ -7,5 +7,7 @@
 // Answer
 
 function distinct(a) {
-  return [];
+  return a.filter((item, index) => a.indexOf(item) === index);
 }
+
+distinct([1, 3, 4, 3, 1, 5, 6, 7, 4]);
