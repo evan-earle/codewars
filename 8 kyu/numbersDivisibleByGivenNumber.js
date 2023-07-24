@@ -8,4 +8,14 @@
 
 // Answer
 
-function divisibleBy(numbers, divisor) {}
+function divisibleBy(numbers, divisor) {
+  let list = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % divisor === 0) {
+      list.push(numbers[i]);
+    }
+  }
+  return list;
+}
+
+divisibleBy([1, 2, 3, 4, 5, 6], 2);
