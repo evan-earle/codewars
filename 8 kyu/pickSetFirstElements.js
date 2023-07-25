@@ -13,6 +13,6 @@
 
 // Answer
 
-function first(arr, n) {
-  // return arr;
-}
+function first(arr, n) {}
+
+first(["a", "b", "c", "d", "e"], 3);
