@@ -13,6 +13,9 @@
 
 // Answer
 
-function first(arr, n) {}
+function first(arr, n = 1) {
+  return arr.slice(0, n);
+}
 
 first(["a", "b", "c", "d", "e"], 3);
+first(["a", "b", "c", "d", "e"], 1);
