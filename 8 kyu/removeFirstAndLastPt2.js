@@ -19,4 +19,9 @@
 
 // Answer
 
-function array(string) {}
+function array(string) {
+  const str = string.split(",").slice(1, -1).join(" ") || null;
+  return str;
+}
+
+array("1,2,3,4,5");
