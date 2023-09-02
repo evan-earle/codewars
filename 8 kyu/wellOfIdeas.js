@@ -7,4 +7,22 @@
 
 // Answer
 
-function well(x) {}
+function well(x) {
+  let counter = 0;
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] === "good") {
+      counter += 1;
+    }
+  }
+  console.log(counter);
+  if (counter === 1 || counter === 2) {
+    return "Publish!";
+  } else if (counter > 2) {
+    return "I smell a series!";
+  } else {
+    return "Fail!";
+  }
+}
+
+well(["good", "bad", "bad", "bad", "bad", "good", "bad", "bad", "good"]);
+well(["good", "bad", "bad", "bad", "bad", "bad", "bad"]);
