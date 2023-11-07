@@ -12,4 +12,16 @@
 
 // Answer
 
-function sumOfDifferences(arr) {}
+function sumOfDifferences(arr) {
+  let sum = 0;
+  let newArr = arr.sort((a, b) => {
+    return b - a;
+  });
+  for (let i = 0; i < newArr.length - 1; i++) {
+    sum += arr[i] - arr[i + 1];
+  }
+
+  return sum;
+}
+
+sumOfDifferences([2, 1, 10]);
