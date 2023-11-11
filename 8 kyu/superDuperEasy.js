@@ -4,4 +4,9 @@
 
 // Answer
 
-function problem(x) {}
+function problem(x) {
+  return typeof x !== "number" ? "Error" : x * 50 + 6;
+}
+
+problem(5);
+problem("test");
