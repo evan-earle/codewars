@@ -7,5 +7,11 @@
 // Answer
 
 function isPalindrome(x) {
-  // your code here
+  return x.toLowerCase() === x.toLowerCase().split("").reverse().join("")
+    ? true
+    : false;
 }
+
+console.log(isPalindrome("bingo"));
+console.log(isPalindrome("racecar"));
+console.log(isPalindrome("Abba"));
