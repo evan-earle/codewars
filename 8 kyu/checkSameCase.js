@@ -19,5 +19,20 @@
 // Answer
 
 function sameCase(a, b) {
-  return 0;
+  if (
+    a.toLowerCase() === a.toUpperCase() ||
+    b.toLowerCase() === b.toUpperCase()
+  ) {
+    return -1;
+  } else if (a === a.toLowerCase() && b === b.toLowerCase()) {
+    return 1;
+  } else if (a === a.toUpperCase() && b === b.toUpperCase()) {
+    return 1;
+  } else {
+    return 0;
+  }
 }
+
+console.log(sameCase("?", "a"));
+console.log(sameCase("A", "a"));
+console.log(sameCase("a", "a"));
