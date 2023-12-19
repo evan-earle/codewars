@@ -22,7 +22,7 @@ function isVow(a) {
       a[i] = "u";
     }
   }
-  console.log(a);
+  return a;
 }
 
 isVow([101, 121, 110, 113, 113, 103, 121, 121, 101, 107, 103]);
