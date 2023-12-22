@@ -12,5 +12,11 @@
 // Answer
 
 function multiply(number) {
-  //your code here
+  return number >= 0
+    ? number * 5 ** number.toString().length
+    : Math.abs(number) * 5 ** Math.abs(number).toString().length * -1;
 }
+
+console.log(multiply(3));
+console.log(multiply(10));
+console.log(multiply(-3));
