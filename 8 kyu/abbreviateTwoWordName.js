@@ -13,5 +13,9 @@
 // Answer
 
 function abbrevName(name) {
-  // code away
+  const word = name.split(" ");
+  const newWord = word.map((name) => name.slice(0, 1).toUpperCase());
+  return newWord.join(".");
 }
+
+console.log(abbrevName("Sam Harris"));
