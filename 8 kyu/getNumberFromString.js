@@ -5,5 +5,7 @@
 // Answer
 
 function getNumberFromString(s) {
-  return 0;
+  return +s.replace(/\D/g, "");
 }
+
+getNumberFromString("hell5o wor6ld");
