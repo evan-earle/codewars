@@ -15,4 +15,20 @@
 
 // Answer
 
-function sumArray(array) {}
+function sumArray(array) {
+  let newArr = [];
+  let sum = 0;
+  if (array) {
+    if (array.length >= 2) {
+      newArr = array.sort((a, b) => a - b);
+      newArr.shift();
+      newArr.pop();
+
+      return (sum = newArr.reduce((a, b) => a + b, 0));
+    }
+    return 0;
+  }
+  return 0;
+}
+
+console.log(sumArray([6, 2, 1, 8, 10]));
