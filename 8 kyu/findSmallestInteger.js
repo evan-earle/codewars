@@ -10,6 +10,8 @@
 
 // Answer
 
-class SmallestIntegerFinder {
-  findSmallestInt(args) {}
-}
+const findSmallestInt = (args) => {
+  return Number(args.sort((a, b) => a - b).slice(0, 1));
+};
+
+console.log(findSmallestInt([34, 15, 88, 2]));
