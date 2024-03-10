@@ -12,6 +12,6 @@
 
 // Answer
 
-const combineNames = () => {
-  return;
+const combineNames = (first, last) => {
+  return first + " " + last;
 };
