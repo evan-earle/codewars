@@ -16,5 +16,5 @@
 // Answer
 
 const stringToNumber = function (str) {
-  return;
+  return Number(str);
 };
